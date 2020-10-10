@@ -34,7 +34,7 @@ for ip in devices:
     today = str(now.year) + '-' + str(now.month) + '-' + str(now.day)
     file = today + '-' + hostname + '.txt'
 
-    with open(file , 'r') as backup:
+    with open(file , 'w') as backup:
         backup.write(output)
         print('Backup of ' + hostname+ ' ' + 'completed successfully')
         print('#' * 30)
